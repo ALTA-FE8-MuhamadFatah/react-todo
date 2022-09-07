@@ -46,8 +46,8 @@ const HomePage = () => {
         } else {
             axios.post(`https://api.todoist.com/rest/v1/tasks/`, item)
                 .then(() => {
-                    getApi()
                     handleClear()
+                    getApi()
                 })
         }
     }

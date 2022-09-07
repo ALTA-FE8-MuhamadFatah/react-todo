@@ -9,7 +9,7 @@ import DetailPage from "./pages/DetailPage/DetailPage"
 const App = () => {
   // Set bearer token
   axios.defaults.headers.common = {
-    "Authorization": `Bearer f046e87d06302ef3649b10ba4b4b7742d34e3497`
+    "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`
   }
 
   return (
